@@ -13,10 +13,11 @@ function combineUsers(...args) {
   };
   // add attribute to combinedObject called merge_date
   const merge_date = "merge_date";
-  combinedObject[merge_date] = 9/20/2025; 
+  combinedObject[merge_date] = "9/20/2025"; 
   return combinedObject;
 }
 
 module.exports = {
   ...(typeof combineUsers !== 'undefined' && { combineUsers })
+
 };
