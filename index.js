@@ -1,3 +1,5 @@
+require("datejs");
+
 function combineUsers(...args) {
   const combinedObject = {
     users: [],
@@ -10,7 +12,8 @@ function combineUsers(...args) {
     }
   };
   // add attribute to combinedObject called merge_date
-  
+  const merge_date = "merge_date";
+  combinedObject[merge_date] = 9/20/2025; 
   return combinedObject;
 }
 
